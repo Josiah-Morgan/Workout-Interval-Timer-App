@@ -38,6 +38,7 @@ public class TimerActivity extends AppCompatActivity {
 
         // add checks for data
 
+        assert countdownIntervals != null;
         if (countdownIntervals.equals("Inf.")) {
             countdownIntervals = "-1";
             btn_addInterval.setVisibility(View.INVISIBLE);
@@ -50,45 +51,20 @@ public class TimerActivity extends AppCompatActivity {
 
 
         // Back Button
-        btn_backButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                workoutTimer.backButton();
-            }
-        });
+        btn_backButton.setOnClickListener(v -> workoutTimer.backButton());
 
         // Add Interval
-        btn_addInterval.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                workoutTimer.addInterval();
-            }
-        });
+        btn_addInterval.setOnClickListener(v -> workoutTimer.addInterval());
 
         // Add 5 Seconds
-        btn_addFiveSeconds.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                workoutTimer.addFiveSeconds();
-            }
-        });
+        btn_addFiveSeconds.setOnClickListener(v -> workoutTimer.addFiveSeconds());
 
         // Subtract Five Seconds
-        btn_subtractFiveSeconds.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                workoutTimer.subtractFiveSeconds();
-            }
-        });
+        btn_subtractFiveSeconds.setOnClickListener(v -> workoutTimer.subtractFiveSeconds());
 
 
         // Pause and Resume
-        btn_pauseAndResumeCountdown.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                workoutTimer.pauseResumeTimerHandler();
-            }
-        });
+        btn_pauseAndResumeCountdown.setOnClickListener(v -> workoutTimer.pauseResumeTimerHandler());
 
         // Reset
         btn_resetCountdown.setOnClickListener(new View.OnClickListener() {
