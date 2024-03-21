@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_invtervalsText"
+        android:layout_width="124dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/alata"
+        android:text="Intervals (number)"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_startMenu" />
+
+    <TextView
+        android:id="@+id/tv_startMenu"
+        android:layout_width="262dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="126dp"
+        android:layout_marginEnd="75dp"
+        android:fontFamily="@font/alata"
+        android:text="Start Menu"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_countdownIntervals"
+        android:layout_width="106dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:fontFamily="@font/alata"
+        android:inputType="number"
+        android:text="Inf."
+        android:textAlignment="center"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_invtervalsText"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/et_workTime"
+        android:layout_width="106dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:fontFamily="@font/alata"
+        android:inputType="number"
+        android:text="30"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_restText" />
+
+    <EditText
+        android:id="@+id/et_restTime"
+        android:layout_width="106dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:fontFamily="@font/alata"
+        android:inputType="number"
+        android:text="30"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/et_countdownIntervals"
+        app:layout_constraintStart_toEndOf="@+id/et_workTime"
+        app:layout_constraintTop_toBottomOf="@+id/tv_restText" />
+
+    <TextView
+        android:id="@+id/tv_workText"
+        android:layout_width="124dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/alata"
+        android:text="Work Time (sec)"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_startMenu" />
+
+    <TextView
+        android:id="@+id/tv_restText"
+        android:layout_width="124dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp"
+        android:fontFamily="@font/alata"
+        android:text="Rest Time (sec)"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_invtervalsText"
+        app:layout_constraintStart_toEndOf="@+id/tv_workText"
+        app:layout_constraintTop_toBottomOf="@+id/tv_startMenu" />
+
+    <Button
+        android:id="@+id/btn_startCountdown"
+        android:layout_width="186dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginBottom="256dp"
+        android:backgroundTint="#000000"
+        android:fontFamily="@font/alata"
+        android:text="Start Timer"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+<!--    <com.google.android.gms.ads.AdView-->
+<!--        xmlns:ads="http://schemas.android.com/apk/res-auto"-->
+<!--        android:id="@+id/adView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="44dp"-->
+<!--        android:layout_marginBottom="64dp"-->
+<!--        ads:adSize="BANNER"-->
+<!--        ads:adUnitId="ca-app-pub-3940256099942544/9214589741"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
